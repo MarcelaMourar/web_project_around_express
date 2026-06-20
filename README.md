@@ -1,113 +1,110 @@
 # web_project_around_express
 
-## 📌 Descrição
+## 📌 Description
 
-O **web_project_around_express** é uma API desenvolvida com **Node.js** e **Express.js** que simula o backend do projeto **EUA Afora**, criado durante o curso de Desenvolvimento Web.
+**web_project_around_express** is an API built with **Node.js** and **Express.js**. It works as the backend for the **Around The U.S.** project, created during the Web Development course.
 
-A aplicação disponibiliza rotas para acessar informações de **usuários** e **cards**, retornando dados armazenados em arquivos JSON locais.
+The application has routes to access information about **users** and **cards**. It returns data from local JSON files.
 
-O principal objetivo deste projeto é praticar a construção de uma API REST, aplicando conceitos fundamentais do desenvolvimento backend, como organização modular do código, criação de rotas e utilização de ferramentas que auxiliam na produtividade e na padronização do projeto.
-
----
-
-## 🎯 Objetivos de Aprendizagem
-
-Durante o desenvolvimento deste projeto, foram aplicados os seguintes conceitos:
-
-* Criar um servidor utilizando **Express.js**;
-* Organizar o código de forma modular;
-* Trabalhar com rotas e respostas em formato **JSON**;
-* Utilizar ferramentas de desenvolvimento como **Nodemon** e **ESLint**;
-* Estruturar uma API seguindo boas práticas de desenvolvimento.
+The main goal of this project is to practice building a REST API, applying basic backend development concepts like modular code organization, creating routes, and using tools for productivity and code standards.
 
 ---
 
-## ⚙️ Funcionalidades
+## 🎯 Learning Objectives
 
-A API disponibiliza as seguintes rotas:
+During the development of this project, the following concepts were applied:
 
-### 👥 Usuários
+* Create a server using **Express.js**;
+* Organize code in a modular way;
+* Work with routes and responses in **JSON** format;
+* Use development tools like **Nodemon** and **ESLint**;
+* Structure an API following coding best practices.
 
-| Método | Rota         | Descrição                                      |
-| ------ | ------------ | ---------------------------------------------- |
-| GET    | `/users`     | Retorna a lista de todos os usuários           |
-| GET    | `/users/:id` | Retorna um usuário específico pelo ID          |
-| GET    | `/users/:id` | Retorna erro **404** caso o usuário não exista |
+---
+
+## ⚙️ Features
+
+The API provides the following routes:
+
+### 👥 Users
+
+| Method | Route        | Description                                  |
+| ------ | ------------ | -------------------------------------------- |
+| GET    | `/users`     | Returns a list of all users                  |
+| GET    | `/users/:id` | Returns a specific user by ID                |
+| GET    | `/users/:id` | Returns a **404** error if the user does not exist |
 
 ### 🖼️ Cards
 
-| Método | Rota     | Descrição                         |
-| ------ | -------- | --------------------------------- |
-| GET    | `/cards` | Retorna a lista de todos os cards |
+| Method | Route    | Description                         |
+| ------ | -------- | ----------------------------------- |
+| GET    | `/cards` | Returns a list of all cards         |
 
-### ❌ Tratamento de rotas inexistentes
+### ❌ Handling Non-Existent Routes
 
-Qualquer rota não encontrada retorna a seguinte resposta:
+Any route that is not found returns the following response:
 
 ```json
 {
-  "message": "A solicitação não foi encontrada"
+  "message": "Requested resource not found"
 }
-```
+
+## 🛠️ Technologies Used
+
+* **Node.js** → JavaScript runtime environment for the server;
+* **Express.js** → Framework for building servers and APIs;
+* **JavaScript** → Main language of the project;
+* **Nodemon** → Automatic server restart during development;
+* **ESLint (Airbnb Style Guide)** → Code standardization and quality;
+* **Arquitetura Modular** → Project organization using folders like `routes/` and `data/`.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-* **Node.js** → Ambiente de execução JavaScript no servidor;
-* **Express.js** → Framework para criação de servidores e APIs;
-* **JavaScript** → Linguagem principal do projeto;
-* **Nodemon** → Reinicialização automática durante o desenvolvimento;
-* **ESLint (Airbnb Style Guide)** → Padronização e qualidade do código;
-* **Arquitetura Modular** → Organização do projeto em pastas, como `routes/` e `data/`.
-
----
 
 
+## 🚀 How to run the project
 
-## 🚀 Como executar o projeto
-
-### 1. Clone o repositório
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/seu-usuario/web_project_around_express.git
+git clone https://github.com/MarcelaMourar/web_project_around_express.git
 ```
 
-### 2. Acesse a pasta do projeto
+### 2. Go to the project folder
 
 ```bash
 cd web_project_around_express
 ```
 
-### 3. Instale as dependências
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Inicie o servidor
+### 4. Start the server
 
-Modo de desenvolvimento (com Nodemon):
+Development mode (with Nodemon):
 
 ```bash
 npm run dev
 ```
 
-Ou execute normalmente:
+Or run normally:
 
 ```bash
 npm start
 ```
 
-### 5. Acesse a aplicação
+### 5. Access the application
 
-O servidor estará disponível em:
+The server will be available at:
 
 ```text
 http://localhost:3000
 ```
 
-Exemplos de rotas:
+Route examples:
 
 ```text
 http://localhost:3000/users
@@ -119,6 +116,6 @@ http://localhost:3000/cards
 
 ---
 
-## 📚 Autor
+## 📚 Author
 
-Projeto desenvolvido como parte dos estudos do curso de **Desenvolvimento Web**, com o objetivo de praticar a criação de APIs utilizando **Node.js** e **Express.js**.
+Project developed as part of **Web Development** studies to practice building **APIs with Node.js and Express.js**.
