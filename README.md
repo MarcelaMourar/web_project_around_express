@@ -1,8 +1,8 @@
-# web_project_around_express
+# Around-us-express
 
 ## 📌 Description
 
-**web_project_around_express** is an API built with **Node.js** and **Express.js**. It works as the backend for the **Around The U.S.** project, created during the Web Development course.
+**around-us-express** is an API built with **Node.js** and **Express.js**. It works as the backend for the **Around The U.S.** project, created during the Web Development course.
 
 The application has routes to access information about **users** and **cards**. It returns data from local JSON files.
 
@@ -67,13 +67,13 @@ Any route that is not found returns the following response:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MarcelaMourar/web_project_around_express.git
+git clone https://github.com/MarcelaMourar/around-us-express.git
 ```
 
 ### 2. Go to the project folder
 
 ```bash
-cd web_project_around_express
+cd around-us-express
 ```
 
 ### 3. Install dependencies
